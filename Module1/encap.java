@@ -1,7 +1,7 @@
 package Module1;
 
 class encap {
-    private int a = 10;
+    int a = 10;
 }
 
 class Second extends encap { 
