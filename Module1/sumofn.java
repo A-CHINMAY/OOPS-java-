@@ -16,5 +16,6 @@ public class sumofn {
             i++;
         } while (i <= n);
         System.out.println("sum=" + sum);
+        sc.close();
     }
 }

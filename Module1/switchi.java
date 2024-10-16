@@ -32,5 +32,6 @@ public class switchi {
                 System.out.println("Invalid operator");
                 break;
         }
+        sc.close();
     }
 }

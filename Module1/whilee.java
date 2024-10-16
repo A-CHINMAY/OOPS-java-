@@ -12,5 +12,6 @@ public class whilee {
             System.out.println(i);
             i++;
         }
+        sc.close();
     }
 }

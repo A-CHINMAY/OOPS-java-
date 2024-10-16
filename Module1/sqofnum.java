@@ -13,5 +13,6 @@ public class sqofnum {
             sum = sum + i * i;
         }
         System.out.println("sum=" + sum);
+        sc.close();
     }
 }
