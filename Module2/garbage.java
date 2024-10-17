@@ -1,7 +1,6 @@
 package Module2;
 
 class garbage {
-    // Overriding the finalize() method
     protected void finalize() {
         System.out.println("Object memory deallocated");
     }
