@@ -8,7 +8,7 @@ interface B {
     void show();
 }
 
-public class X implements A, B {
+public class Mutipleinherit implements A, B {
     public void display() {
         System.out.println("abstract method of interface  A  is implemented in child class");
     }
@@ -18,7 +18,7 @@ public class X implements A, B {
         }
 
     public static void main(String[] args) {
-        X obj = new X();
+        Mutipleinherit obj = new Mutipleinherit();
         obj.display();
         obj.show();
     }
