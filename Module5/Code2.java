@@ -11,10 +11,10 @@ public class Code2 {
         d2 = Days3.tue;
         d3 = Days3.wed;
 
-        if (d1.compareTo(d2) < 0)
-            System.out.println("mon comes before tue");
-        if (d2.compareTo(d3) < 0)
-            System.out.println("tue comes before wed");
+        if (d1.compareTo(d2) > 0)
+            System.out.println("mon comes after tue");
+        if (d2.compareTo(d3) > 0)
+            System.out.println("tue comes after wed");
         if (d3.compareTo(d2) > 0)
             System.out.println("wed comes after tue");
     }
