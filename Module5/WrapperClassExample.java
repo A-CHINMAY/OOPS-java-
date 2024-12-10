@@ -5,8 +5,10 @@ public class WrapperClassExample {
     public static void main(String[] args) {
 
         char c1 = 'a';  //primitive type
+        
 
         Character c = new Character('@'); //object type
+       
         
         boolean obj = true;
 
