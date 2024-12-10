@@ -1,4 +1,4 @@
-package Module5;
+package Module5.enumerations;
 
 public class auto1 {
     public static void main(String[] args) {

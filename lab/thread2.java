@@ -17,7 +17,7 @@ class myThread extends Thread {
     }
 }
 
-public class Lab7b {
+public class thread2 {
     public static void main(String[] args) {
         myThread t = new myThread("UwU");
         t.start();

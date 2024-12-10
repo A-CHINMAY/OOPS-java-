@@ -1,4 +1,4 @@
-package Module5;
+package Module5.enumerations;
 
 enum Days4 {
     mon, tue, wed;

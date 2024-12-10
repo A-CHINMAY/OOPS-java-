@@ -42,6 +42,7 @@ public class Stack {
         }
     }
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Stack stack = new Stack();
         Scanner scanner = new Scanner(System.in);
