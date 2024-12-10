@@ -1,6 +1,6 @@
 package lab;
 
-class Employee {
+public class Employee {
     private int id;
     private String name;
     private double salary;
@@ -12,33 +12,29 @@ class Employee {
     }
 
     public void raiseSalary(double percent) {
-        if (percent > 0) {
-            double raiseAmount = salary * (percent / 100);
-            salary += raiseAmount;
-            System.out.println(name + "'s salary raised by " + percent + "%. New salary:$" + salary);
-        } else {
-            System.out.println("Invalid percentage. Salary remains unchanged.");
+        if (percent < 0) {
+            System.out.println("Percentage must be positive.");
+            return;
         }
+        double raise = salary * percent / 100;
+        salary += raise;
     }
 
-    public String toString() {
-        return "Employee ID: " + id + ", Name: " + name + ", Salary: $" + salary;
+    public void displayInfo() {
+        System.out.printf("ID: %d, Name: %s, Salary: %.2f%n", id, name, salary);
     }
 
+    // Main method for demonstration
     public static void main(String[] args) {
+        // Create an Employee object
+        Employee emp = new Employee(1, "John Doe", 50000.00);
 
-        // Creating an Employee object
-        Employee employee = new Employee(1, "John Doe", 50000.0);
+        System.out.println("Employee details before raise:");
+        emp.displayInfo();
 
-        // Displaying employee details
-        System.out.println("Initial Employee Details:");
-        System.out.println(employee);
+        emp.raiseSalary(10);
 
-        // Raising salary by 10%
-        employee.raiseSalary(10);
-        
-        // Displaying updated employee details
-        System.out.println("\nEmployee Details after Salary Raise:");
-        System.out.println(employee);
+        System.out.println("Employee details after 10% raise:");
+        emp.displayInfo();
     }
 }
