@@ -6,7 +6,7 @@ public class CusExcep{
         if (divisor == 0) {
             throw new Exception("division by zero");
         }
-        return divisor;
+        return divident/divisor;
     }
     public static void main(String[] args) {
         try{
